@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Controle de Estoque</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>{reprograma} + Mercado Livre</h1>
+        <h2>Projeto Final</h2>
+        <h3>API - Controle de Estoque</h3>
+        <table class="table table-sm">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Cidade</th>
+                    <th scope="col">Quadricula</th>
+                    <th scope="col">Produçao Da QD</th>
+                    <th scope="col">Finalizada Em</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% produtos.forEach(function(produtos) { %>
+                <tr>
+                    <th><%= produtos.Cidade %></th>
+                    <th><%= produtos.Quadricula %></th>
+                    <th><%= produtos.Produçao %></th>
+                    <th><%= produtos.dataFinalizada %></th>
+                </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
